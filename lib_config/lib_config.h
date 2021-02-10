@@ -10,7 +10,7 @@
 
 
 //choose mcu
-#define AD_USE_STM32F1
+#define AD_USE_STM32F4
 
 
 

@@ -9,7 +9,7 @@
 #define LIB_DRV_GPIO_DRV_MCU_HAL_GPIO_STM32F1_H_
 
 //cube_hal
-#include "stm32f1xx_hal.h"
+#include "stm32f4xx_hal.h"
 
 static inline void AD_GPIO_Write(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState)
 {
