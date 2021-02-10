@@ -8,7 +8,9 @@
 #ifndef LIB_DRV_LIB_DRV_H_
 #define LIB_DRV_LIB_DRV_H_
 
-#include "../lib_hal.h"
+#include "../lib_config/lib_config.h"
+#include "./gpio_drv/gpio_drv.h"
+
 
 
 
