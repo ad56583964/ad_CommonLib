@@ -5,7 +5,7 @@
  *      Author: ad565
  */
 
-#include "../../../lib_hal.h"
+
 
 #ifdef use_stm32f1
 

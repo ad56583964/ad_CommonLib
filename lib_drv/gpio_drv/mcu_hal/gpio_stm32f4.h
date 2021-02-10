@@ -11,11 +11,7 @@
 //cube_hal
 #include "stm32f4xx_hal.h"
 
-static inline void AD_GPIO_Write(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState)
-{
-    HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
-}
-
+void AD_GPIO_Write(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
 
 
 
