@@ -9,7 +9,7 @@
 #define LIB_DRV_LIB_DRV_H_
 
 #include "../lib_config/lib_config.h"
-#include "./gpio_drv/gpio_drv.h"
+
 
 
 
