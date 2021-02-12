@@ -1,7 +1,7 @@
 /*
- * uart_stm32f1.c
+ * uart_stm32f4.c
  *
- *  Created on: Feb 8, 2021
+ *  Created on: 2021年2月12日
  *      Author: ad565
  */
 
@@ -12,3 +12,5 @@ uint8_t AD_UART_Write(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size)
 	return HAL_UART_Transmit(huart, pData, Size, 1000);
 
 }
+
+
