@@ -8,8 +8,7 @@
 #ifndef LIB_DRV_STM32F4_AD_STM32F4_HAL_H_
 #define LIB_DRV_STM32F4_AD_STM32F4_HAL_H_
 
-
-
+#include "./Inc/gpio_stm32f4.h"
 
 
 #endif /* LIB_DRV_STM32F4_AD_STM32F4_HAL_H_ */

@@ -7,10 +7,4 @@
 
 
 
-#ifdef use_stm32f1
-
-
-
-
-#endif
 
