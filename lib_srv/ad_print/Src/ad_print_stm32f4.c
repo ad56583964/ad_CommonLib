@@ -25,11 +25,8 @@ int8_t AD_Print(UART_HandleTypeDef *huart, char *fmt, ...)
     va_start(ap, fmt);
     len = vsnprintf(buf, sizeof(buf), fmt, ap);
     va_end(ap);
-    int i = 0;
-    for(i = 0; i < len; i++)
-    {
-    	AD_UART_Write(huart, buf[i], 1);
-    }
+
+    AD_UART_Write(huart, buf, len);
     return 0;
 }
 
