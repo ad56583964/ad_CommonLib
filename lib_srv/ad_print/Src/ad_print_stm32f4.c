@@ -11,7 +11,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-#include "../Inc/print_stm32f4.h"
+#include "../Inc/ad_print_stm32f4.h"
+
+
 
 int8_t AD_Print(UART_HandleTypeDef *huart, char *fmt, ...)
 {
@@ -19,16 +21,14 @@ int8_t AD_Print(UART_HandleTypeDef *huart, char *fmt, ...)
 
     va_list ap;
     int len = 0;
-
     char buf[64];
     va_start(ap, fmt);
     len = vsnprintf(buf, sizeof(buf), fmt, ap);
     va_end(ap);
-
-    uint32_t i = 0;
+    int i = 0;
     for(i = 0; i < len; i++)
     {
-    	AD_UART_Write(huart, (uint8_t*)buf+i, 1);
+    	AD_UART_Write(huart, buf[i], 1);
     }
     return 0;
 }

@@ -10,8 +10,9 @@
 
 #include "../lib_config/lib_config.h"
 
-#include "./stm32f4/ad_stm32f4_hal.h"
-
+#ifdef AD_USE_STM32F4
+#include "stm32f4/ad_stm32f4_hal.h"
+#endif
 
 
 
