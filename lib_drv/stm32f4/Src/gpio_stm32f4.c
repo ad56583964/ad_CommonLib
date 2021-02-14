@@ -14,6 +14,11 @@ inline void AD_GPIO_Write(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState 
     HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
 }
 
+inline int8_t AD_GPIO_Read(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
+{
+    return HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
+}
+
 void AD_GPIO_PULL(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, Pull_State PullState)
 {
     uint32_t position;

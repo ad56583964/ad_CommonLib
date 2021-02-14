@@ -12,7 +12,10 @@
 #include "../../ad_drv_hal/ad_gpio.h"
 #include "../_interface_stm32f4.h"
 
+
 void AD_GPIO_Write(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+
+int8_t AD_GPIO_Read(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
 
 void AD_GPIO_PULL(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, Pull_State PullState);
 
