@@ -14,7 +14,7 @@
 #define TIME_BASE_MS			          1    //1ms
 
 /* 软件定时器数量 */
-#define TIMER_NUM                   10
+#define TIMER_NUM                   1
 
 /* 定时器ID */
 #define AD_TIMER_PRINT            0
