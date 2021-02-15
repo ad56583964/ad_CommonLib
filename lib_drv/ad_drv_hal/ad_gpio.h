@@ -19,6 +19,6 @@ typedef enum
   NO_PULL = 0,
   PULL_UP,
   PULL_DOWN
-}Pull_State;
+}AD_Pull_State;
 
 #endif /* LIB_DRV_AD_DRV_HAL_AD_GPIO_H_ */

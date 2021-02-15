@@ -11,11 +11,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-#include "../Inc/ad_print_stm32f4.h"
+#include "../Inc/ad_print.h"
 
 
 
-int8_t AD_Print(UART_HandleTypeDef *huart, char *fmt, ...)
+int8_t AD_Print(AD_UART_Handle *huart, char *fmt, ...)
 {
 //引用https://blog.csdn.net/windeal3203/article/details/39209003
 

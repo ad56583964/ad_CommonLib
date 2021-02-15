@@ -10,6 +10,8 @@
 
 #include "../_interface_stm32f4.h"
 
-uint8_t AD_UART_Write(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+typedef UART_HandleTypeDef AD_UART_Handle;
+
+uint8_t AD_UART_Write(AD_UART_Handle *huart, uint8_t *pData, uint16_t Size);
 
 #endif /* LIB_DRV_STM32F4_INC_UART_STM32F4_H_ */

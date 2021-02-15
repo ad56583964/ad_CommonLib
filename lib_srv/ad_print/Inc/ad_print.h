@@ -10,6 +10,6 @@
 
 #include "../../../lib_drv/lib_drv.h"
 
-int8_t AD_Print(UART_HandleTypeDef *huart, char *fmt, ...);
+int8_t AD_Print(AD_UART_Handle *huart, char *fmt, ...);
 
 #endif /* LIB_SRV_AD_PRINT_INC_AD_PRINT_H_ */

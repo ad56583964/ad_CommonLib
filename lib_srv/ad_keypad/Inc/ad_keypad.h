@@ -12,5 +12,16 @@
 
 #define KEY_SCALE 4
 
+/*AD_GPIO_Handle *AD_X_GPIO[KEY_SCALE] = {
+        GPIOA
+};
+
+uint16_t AD_X_PIN[KEY_SCALE] = {
+        GPIO_PIN_5
+};*/
+
+void Key_X_Write(AD_GPIO_Handle **X_GPIO, uint16_t *X_PIN, AD_GPIO_State PinState);
+
+void Key_Y_PULL(AD_GPIO_Handle **Y_GPIO, uint16_t *Y_PIN, AD_Pull_State PullState);
 
 #endif /* LIB_SRV_AD_KEYPAD_INC_AD_KEYPAD_H_ */

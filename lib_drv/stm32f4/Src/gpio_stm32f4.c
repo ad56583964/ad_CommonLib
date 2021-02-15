@@ -9,17 +9,17 @@
 #define GPIO_NUMBER           16U
 
 
-inline void AD_GPIO_Write(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState)
+inline void AD_GPIO_Write(AD_GPIO_Handle *GPIOx, uint16_t GPIO_Pin, AD_GPIO_State PinState)
 {
     HAL_GPIO_WritePin(GPIOx, GPIO_Pin, PinState);
 }
 
-inline int8_t AD_GPIO_Read(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
+inline int8_t AD_GPIO_Read(AD_GPIO_Handle *GPIOx, uint16_t GPIO_Pin)
 {
     return HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
 }
 
-void AD_GPIO_PULL(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, Pull_State PullState)
+void AD_GPIO_PULL(AD_GPIO_Handle *GPIOx, uint16_t GPIO_Pin, AD_Pull_State PullState)
 {
     uint32_t position;
     uint32_t ioposition = 0x00U;
