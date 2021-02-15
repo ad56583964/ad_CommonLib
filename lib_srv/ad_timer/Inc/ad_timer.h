@@ -11,13 +11,14 @@
 #include "../../../lib_drv/lib_drv.h"
 
 /* 软件定时器时钟节拍单位 */
-#define TIME_BASE_MS			          1    //1ms
+#define TIME_BASE_MS			     1    //1ms
 
 /* 软件定时器数量 */
-#define TIMER_NUM                   1
+#define TIMER_NUM                   2
 
 /* 定时器ID */
 #define AD_TIMER_PRINT            0
+#define AD_TIMER_KEYBOARD         1
 
 
 typedef void callback(void *argv, uint16_t argc);
@@ -50,7 +51,7 @@ uint32_t Tick_Cnt_Get(void);
 
 uint8_t AD_Timer_Init();
 
-void AD_Timer_Start(uint16_t id, Timer_Mode mode, uint32_t delay, callback *cb, void *argv, uint16_t argc);
+void AD_Timer_Start(uint16_t id, Timer_Mode mode, uint32_t delay, callback *cb);
 
 void AD_Timer_Update(void);
 

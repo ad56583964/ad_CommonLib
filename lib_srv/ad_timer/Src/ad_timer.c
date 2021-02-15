@@ -19,7 +19,6 @@ static AD_Timer timer[TIMER_NUM];        //软件定时器数组
 void Tick_Cnt_Update(void)
 {
     tickCnt++;
-
 }
 
 uint32_t Tick_Cnt_Get(void)
@@ -43,7 +42,7 @@ uint8_t AD_Timer_Init()
     return 0;
 }
 
-void AD_Timer_Start(uint16_t id, Timer_Mode mode, uint32_t delay, callback *cb, void *argv, uint16_t argc)
+void AD_Timer_Start(uint16_t id, Timer_Mode mode, uint32_t delay, callback *cb /*, void *argv, uint16_t argc*/ )
 {
     //assert_param(id < TIMER_NUM);
     //assert_param(mode == MODE_ONE_SHOT || mode == MODE_PERIODIC);
@@ -53,8 +52,8 @@ void AD_Timer_Start(uint16_t id, Timer_Mode mode, uint32_t delay, callback *cb, 
     timer[id].state = AD_TIMER_RUNNING;
     timer[id].mode = mode;
     timer[id].cb = cb;
-    timer[id].argv = argv;
-    timer[id].argc = argc;
+    //timer[id].argv = argv;
+    //timer[id].argc = argc;
 }
 
 void AD_Timer_Update(void)
