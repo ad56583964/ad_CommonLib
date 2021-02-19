@@ -14,4 +14,6 @@
 
 #include "ad_print/Inc/ad_print.h"
 
+#include "AS5048A/Inc/ad_as5048a.h"
+
 #endif /* LIB_SRV_LIB_SRV_H_ */

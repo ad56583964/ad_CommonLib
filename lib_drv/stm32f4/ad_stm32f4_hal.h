@@ -12,5 +12,7 @@
 
 #include "./Inc/uart_stm32f4.h"
 
+#include "./Inc/spi_stm32f4.h"
+
 
 #endif /* LIB_DRV_STM32F4_AD_STM32F4_HAL_H_ */
