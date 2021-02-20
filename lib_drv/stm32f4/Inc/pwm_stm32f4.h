@@ -12,6 +12,7 @@
 
 typedef uint8_t     AD_PWM_Handle;
 typedef float       AD_Duty;
+typedef uint8_t     AD_PWM_Static
 
 void AD_PWM1_SET(AD_Duty PWM_Duty);
 
