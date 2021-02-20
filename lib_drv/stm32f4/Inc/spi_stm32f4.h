@@ -14,7 +14,4 @@ typedef SPI_HandleTypeDef AD_SPI_Handle;
 
 uint8_t AD_SPI1_WriteRead(uint8_t *pTxData, uint8_t *pRxData);
 
-
-
-
 #endif /* LIB_DRV_STM32F4_INC_SPI_STM32F4_H_ */
