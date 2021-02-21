@@ -10,6 +10,6 @@
 
 #include "stm32f4xx_hal.h"
 #include "stdint.h"
-
+#include "stdlib.h"
 
 #endif /* LIB_DRV_STM32F4__INTERFACE_STM32F4_H_ */

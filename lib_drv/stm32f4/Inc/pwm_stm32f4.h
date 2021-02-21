@@ -12,8 +12,14 @@
 
 typedef uint8_t     AD_PWM_Handle;
 typedef float       AD_Duty;
-typedef uint8_t     AD_PWM_Static
+typedef uint8_t     AD_PWM_Static;
+
+AD_PWM_Static AD_PWM1_Start();
+AD_PWM_Static AD_PWM2_Start();
+AD_PWM_Static AD_PWM3_Start();
 
 void AD_PWM1_SET(AD_Duty PWM_Duty);
+void AD_PWM2_SET(AD_Duty PWM_Duty);
+void AD_PWM3_SET(AD_Duty PWM_Duty);
 
 #endif /* LIB_DRV_STM32F4_INC_PWM_STM32F4_H_ */

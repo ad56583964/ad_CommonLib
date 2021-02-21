@@ -8,7 +8,9 @@
 
 extern TIM_HandleTypeDef htim3;
 
-#define PWM_PULSE 2000
+#define __PWM1_PULSE__ 2000
+#define __PWM2_PULSE__ 2000
+#define __PWM3_PULSE__ 2000
 
 AD_PWM_Static AD_PWM1_Start()
 {
@@ -27,15 +29,15 @@ AD_PWM_Static AD_PWM3_Start()
 
 void AD_PWM1_SET(AD_Duty PWM_Duty)
 {
-    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, PWM_PULSE*PWM_Duty*0.01);
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, (__PWM1_PULSE__)*PWM_Duty*0.01);
 }
 
 void AD_PWM2_SET(AD_Duty PWM_Duty)
 {
-    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, PWM_PULSE*PWM_Duty*0.01);
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, (__PWM2_PULSE__)*PWM_Duty*0.01);
 }
 
 void AD_PWM3_SET(AD_Duty PWM_Duty)
 {
-    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, PWM_PULSE*PWM_Duty*0.01);
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, (__PWM3_PULSE__)*PWM_Duty*0.01);
 }

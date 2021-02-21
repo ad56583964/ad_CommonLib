@@ -1,0 +1,15 @@
+/*
+ * ad_DataProcessor.h
+ *
+ *  Created on: 2021年2月21日
+ *      Author: ad565
+ */
+
+#ifndef LIB_SRV_AD_DATAPROCESSOR_INC_AD_DATAPROCESSOR_H_
+#define LIB_SRV_AD_DATAPROCESSOR_INC_AD_DATAPROCESSOR_H_
+
+
+
+
+
+#endif /* LIB_SRV_AD_DATAPROCESSOR_INC_AD_DATAPROCESSOR_H_ */
