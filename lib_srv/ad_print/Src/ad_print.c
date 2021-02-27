@@ -13,9 +13,9 @@
 
 #include "../Inc/ad_print.h"
 
+extern UART_HandleTypeDef huart1;
 
-
-int8_t AD_Print(AD_UART_Handle *huart, char *fmt, ...)
+int8_t AD1_Print(char *fmt, ...)
 {
 //引用https://blog.csdn.net/windeal3203/article/details/39209003
 
@@ -26,8 +26,10 @@ int8_t AD_Print(AD_UART_Handle *huart, char *fmt, ...)
     len = vsnprintf(buf, sizeof(buf), fmt, ap);
     va_end(ap);
 
-    AD_UART_Write(huart, buf, len);
+    AD_UART1_Write(buf, len);
     return 0;
 }
+
+
 
 #endif /* LIB_SRV_AD_PRINT_SRC_AD_PRINT_C_ */

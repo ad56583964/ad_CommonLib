@@ -7,9 +7,9 @@
 
 #include "../Inc/uart_stm32f4.h"
 
-uint8_t AD_UART_Write(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size)
+uint8_t AD_UART1_Write(uint8_t *pData, uint16_t Size)
 {
-	return HAL_UART_Transmit(huart, pData, Size, 1000);
+	return HAL_UART_Transmit(&huart1, pData, Size, 1000);
 
 }
 
